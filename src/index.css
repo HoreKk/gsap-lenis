@@ -1,0 +1,52 @@
+@layer base {
+  @font-face {
+    font-family: 'slussen';
+    font-weight: 400;
+    src: url('./assets/fonts/Slussen-Regular.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'slussen';
+    font-weight: 500;
+    src: url('./assets/fonts/Slussen-Medium.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'slussen';
+    font-weight: 600;
+    src: url('./assets/fonts/Slussen-Semibold.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'slussen';
+    font-weight: 700;
+    src: url('./assets/fonts/Slussen-Bold.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'slussen';
+    font-weight: 900;
+    src: url('./assets/fonts/Slussen-Compressed-Black.woff2') format('woff2');
+    font-stretch: compressed;
+  }
+
+  @font-face {
+    font-family: 'slussen';
+    font-weight: 900;
+    src: url('./assets/fonts/Slussen-Expanded-Black.woff2') format('woff2');
+    font-stretch: expanded;
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+
+  color-scheme: light dark;
+  background-color: #121212;
+}
