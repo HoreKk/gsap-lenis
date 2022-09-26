@@ -2,6 +2,7 @@ import React, { useLayoutEffect, useRef } from 'react'
 import lenisHeader from './assets/lenis.svg'
 import sfdrLogo from './assets/sfdr.svg'
 import { gsap, Expo,  } from "gsap";
+import Button from './components/Button';
 
 function App() {
 
@@ -28,12 +29,10 @@ function App() {
 
     gsap.fromTo(q(".textPopIn"),{
       transform: "translate3d(0, 200%, 0)",
-      y: 75,
     }, 
     {
       transform: "translate3d(0, 0, 0)",
       duration: 2.5,
-      y: 0,
       ease: Expo.easeOut,
     });
 
@@ -66,7 +65,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className='flex items-center justify-between mt-2 md:mt-6 mb-12'>
+        <div className='flex items-center justify-between mt-2 md:mt-6 mb-11'>
           <div className='flex items-center gap-28'>
             <div className='flex'>
               <div className='w-0.5 mr-3.5'>
@@ -93,9 +92,9 @@ function App() {
               </PopInComponent>
             </div>
           </div>
-          <button role="button">
-              Check it out on github
-          </button>
+          <Button>
+            Check it out on github
+          </Button>
         </div>
       </section>
     </div>
